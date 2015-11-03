@@ -139,11 +139,19 @@ REM: "%1" -nt "dp (Task Dependency = 10)" -dp 10
 
 REM: Task Time Estimate -----------------------------------------------------------
 REM: SWITCH_TASKTIMEEST			
-"%1" -nt "te (Task Time Estimate)" -te
+"%1" -nt "te (Task Time Estimate = 8.1 hours)" -te 8.1
+"%1" -nt "te (Task Time Estimate = 8.1 - 5.5 = 2.6 hours)" -te 8.1
+"%1" -te -5.5
+"%1" -nt "te (Task Time Estimate = 8.1 + 2.3 = 10.4 hours)" -te 8.1
+"%1" -te +2.3
 
 REM: Task Time Spent -----------------------------------------------------------
 REM: SWITCH_TASKTIMESPENT			
-"%1" -nt "ts (Task Time Spent)" -ts
+"%1" -nt "ts (Task Time Spent = 5.9 hours)" -ts 5.9
+"%1" -nt "ts (Task Time Spent = 5.9 - 1.3 = 4.6 hours)" -ts 5.9
+"%1" -ts -3.7
+"%1" -nt "ts (Task Time Spent = 5.9 + 2.7 = 8.6 hours)" -ts 5.9
+"%1" -ts +2.7
 
 REM: Task File Reference -----------------------------------------------------------
 REM: SWITCH_TASKFILEREF			
@@ -169,7 +177,15 @@ REM: SWITCH_TASKSTARTTIME
 
 REM: Task Due Date -----------------------------------------------------------
 REM: SWITCH_TASKDUEDATE			
-"%1" -nt "dd (Task Due Date = 11/11/11)" -dd "11/11/11"
+"%1" -nt "dd (Task Due Date = 28/11/11)" -dd "28/11/11"
+"%1" -nt "dd (Task Due Date = 28/11/11 + 5 days = 3/12/11)" -dd "28/11/11"
+"%1" -dd +5
+"%1" -nt "dd (Task Due Date = 4/11/11 - 9 days = 26/10/11)" -dd "4/11/11"
+"%1" -dd -9
+"%1" -nt "dd (Task Due Date = 28/12/11 + 5 days = 2/1/12)" -dd "28/12/11"
+"%1" -dd +5
+"%1" -nt "dd (Task Due Date = 2/1/11 - 9 days = 24/12/10)" -dd "2/1/11"
+"%1" -dd -9
 
 REM: Task Due Time -----------------------------------------------------------
 REM: SWITCH_TASKDUETIME			
