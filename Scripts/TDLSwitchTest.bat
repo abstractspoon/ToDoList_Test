@@ -170,9 +170,25 @@ REM: Task Time Estimate --------------------------------------------------------
 	%1 -nt "te (Task Time Estimate = 8.1 + 2.3 = 10.4 hours)" -te 8.1
 	%1 -te +2.3
 
+	%1 -nt "te (Task Time Estimate = 8.1 Hours + 90 Minutes = 9.6 hours)" -te 8.1
+	%1 -te +90I
+
+	%1 -nt "te (Task Time Estimate = 90 Minutes + 0.25 Hours = 105 Minutes)" -te 90I
+	%1 -te +0.25H
+
 REM: Task Time Spent -----------------------------------------------------------------------
 
-	%1 -nt "ts (Task Time Spent = 5.9 hours)" -ts 5.9
+	%1 -nt "ts (Task Time Spent = 5.9 mins)" -ts 5.9I
+
+	%1 -nt "ts (Task Time Spent = 5.9 hours)" -ts 5.9H
+
+	%1 -nt "ts (Task Time Spent = 5.9 days)" -ts 5.9D
+
+	%1 -nt "ts (Task Time Spent = 5.9 weeks)" -ts 5.9W
+
+	%1 -nt "ts (Task Time Spent = 5.9 months)" -ts 5.9M
+
+	%1 -nt "ts (Task Time Spent = 5.9 years)" -ts 5.9Y
 
 	%1 -nt "ts (Task Time Spent = 5.9 -> 7.8 hours)" -ts 5.9
 	%1 -ts 7.8
@@ -230,6 +246,28 @@ REM: Task Due Date -------------------------------------------------------------
 
 	%1 -nt "dd (Task Due Date = 2/1/11 - 9 days = 24/12/10)" -dd "2/1/11"
 	%1 -dd -9
+
+	%1 -nt "dd (Task Due Date = Today)" -dd "T"
+
+	%1 -nt "dd (Task Due Date = Today + 10 days)" -dd "T+10"
+
+	%1 -nt "dd (Task Due Date = Today + 10 days)" -dd "T+10D"
+
+	%1 -nt "dd (Task Due Date = Today + 4 weeks)" -dd "T+4W"
+
+	%1 -nt "dd (Task Due Date = Today + 2 months)" -dd "T+2M"
+
+	%1 -nt "dd (Task Due Date = Today + 1 year)" -dd "T+1Y"
+
+	%1 -nt "dd (Task Due Date = Today - 10 days)" -dd "T-10"
+
+	%1 -nt "dd (Task Due Date = Today - 10 days)" -dd "T-10D"
+
+	%1 -nt "dd (Task Due Date = Today - 4 weeks)" -dd "T-4W"
+
+	%1 -nt "dd (Task Due Date = Today - 2 months)" -dd "T-2M"
+
+	%1 -nt "dd (Task Due Date = Today - 1 year)" -dd "T-1Y"
 
 REM: Task Due Time -------------------------------------------------------------------------
 
